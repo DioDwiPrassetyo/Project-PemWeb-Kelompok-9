@@ -44,10 +44,10 @@ const Hero = () => {
               BimBimBox Restaurant
             </h1>
             <p className="text-sm sm:text-base text-gray-300">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error illum
-              reprehenderit eligendi, fuga iure quo culpa exercitationem dolorem
-              reiciendis ipsam accusamus, neque et minus blanditiis laboriosam hic
-              cumque est veritatis?
+              At BIMBIMBOX RESTAURANT, we serve authentic dishes crafted with fresh
+              ingredients and passion. Enjoy a delightful dining experience with
+              expertly prepared meals, where every bite reflects our commitment to
+              quality and taste.
             </p>
             <div>
               <button className="bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-full hover:scale-105 duration-200">

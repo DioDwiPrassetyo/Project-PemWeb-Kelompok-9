@@ -36,7 +36,8 @@ const Menu = () => {
             </p>
             <h1 className='text-3xl font-bold text-white'>Menu</h1>
             <p className='text-x5 text-white'>
-              {" "}Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam repellendus, nesciunt assumenda porro consectetur impedit enim distinctio illum. Labore, provident.
+              {" "}Welcome to bimbimbox resorant, where the authentic flavors of Korea meet a warm and cozy atmosphere. We serve a wide variety of traditional Korean dishes from Kimchi and Bibimbap to Korean BBQ prepared with fresh ingredients and time honored recipes.
+              Enjoy authentic dishes, friendly service, and a true Korean ambiance every time you visit.
             </p>
           </div>
           {/* Card Section */}
@@ -45,7 +46,8 @@ const Menu = () => {
               {MenuData.map(({ Id, Img, Name, Description }) => {
                 return (
                   <div key={Id}
-                    className='max-w-[300px] group rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary hover:text-white duration-300 p-4 shadow-xl'>
+                    className='max-w-[300px] group rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary hover:text-white duration-300 shadow-xl'
+                    >
                     <div className='h-[100px]'>
                       <img
                         src={Img}
@@ -55,7 +57,7 @@ const Menu = () => {
                     </div>
                     <div className='p-4 text-center'>
                       <h1 className='text-xl font-bold'>{Name}</h1>
-                      <p className='text-gray-500 text-sm line-clamp-2'>{Description}</p>
+                      <p className='text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2'>{Description}</p>
                     </div>
                   </div>
                 )
