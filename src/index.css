@@ -2,14 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.input {
+  @apply w-full border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400;
 }
-.spin {
-    animation: spin 40s linear infinite;
-}
+

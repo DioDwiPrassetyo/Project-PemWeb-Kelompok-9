@@ -1,18 +1,31 @@
-import React from 'react'
-import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import Menu from './components/Menu/Menu'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./component/navbar";
+import ReservationForm from "./component/ReservationForm";
+import Footer from "./component/Footer";
+import "./index.css";
 
-const App = () => {
+function ReservationContainer() {
   return (
-  <>
-  <div className='bg-[#222831]'>
-    <Navbar />
-    <Hero />
-    <Menu />
-  </div>
-  </>
-  )
+    <div className="min-h-screen bg-cover bg-center flex flex-col items-center justify-start" style={{ backgroundImage: `url("/bg.png")` }}>
+      <Navbar />
+      <div className="mt-32">
+        <ReservationForm />
+      </div>
+      <div className="mt-28">
+        <Footer />
+      </div>
+    </div>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <Router>
+     <Routes>
+  <Route path="/" element={<ReservationContainer />} />
+</Routes>
+    </Router>
+  );
+}
+
+export default App;

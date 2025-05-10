@@ -1,21 +1,18 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode:"class",
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-  extend: {
-      colors:{
-        primary: "#ffc001",
-        secondary: "#ff9c01",
+    extend: {
+      animation: {
+        fadeIn: "fadeIn 0.8s ease-out",
       },
-      container:{
-      center: true,
-      padding:{
-        default:"1rem",
-        sm:"3rem",
-      }
-    }
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0, transform: "translateY(20px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+      },
+    },
   },
   plugins: [],
-  }
 }
